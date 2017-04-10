@@ -1,7 +1,8 @@
 # Home of my brews
 
-`brew install dubo-dubon-duponey/brews/FORMULA`
+Mumbrew:
 
-... where FORMULA among:
-
- * `mumbrew`
+```
+brew install dubo-dubon-duponey/brews/mumbrew
+brew services start mumbrew
+```
