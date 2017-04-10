@@ -5,6 +5,8 @@ class Mumbrew < Formula
       :tag => "v0.0.2",
       :revision => "ee335defd10ca5e91a97da6d31f2a20dda7c6948"
 
+  head "https://github.com/dubo-dubon-duponey/mumbrew.git"
+
   depends_on "terminal-notifier" => :run
 
   def install
