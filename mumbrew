@@ -14,7 +14,7 @@ class Mumbrew < Formula
   end
 
 
-  plist_options :manual => "mumbrew"
+  plist_options :startup => true, :manual => "mumbrew"
 
   def plist; <<-EOS.undent
     <?xml version="1.0" encoding="UTF-8"?>
