@@ -2,8 +2,8 @@ class Mumbrew < Formula
   desc "Auto updater for homebrew with notifications"
   homepage "https://github.com/dubo-dubon-duponey/mumbrew"
   url "https://github.com/dubo-dubon-duponey/mumbrew.git",
-      :tag => "v0.0.2",
-      :revision => "ee335defd10ca5e91a97da6d31f2a20dda7c6948"
+      :tag => "v0.0.3",
+      :revision => "e4d7f1c43c6a46620bf7ad725fb8c54dc70b055d"
 
   head "https://github.com/dubo-dubon-duponey/mumbrew.git"
 
