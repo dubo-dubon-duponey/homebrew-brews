@@ -40,13 +40,13 @@ class Mumbrew < Formula
         <array>
           <dict>
             <key>Hour</key>
-            <integer>10</integer>
+            <integer>19</integer>
             <key>Minute</key>
             <integer>0</integer>
           </dict>
           <dict>
             <key>Hour</key>
-            <integer>22</integer>
+            <integer>7</integer>
             <key>Minute</key>
             <integer>0</integer>
           </dict>
