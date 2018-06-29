@@ -1,13 +1,10 @@
 class Mumbrew < Formula
   desc "Auto updater for homebrew with notifications"
   homepage "https://github.com/dubo-dubon-duponey/mumbrew"
-  url "https://github.com/dubo-dubon-duponey/mumbrew.git",
-      :tag => "v0.0.4",
-      :revision => "047acd5b262e0b3e4e280c0b0e89e7719667f59e"
-
+  url "https://github.com/dubo-dubon-duponey/mumbrew.git"
   head "https://github.com/dubo-dubon-duponey/mumbrew.git"
 
-  depends_on "terminal-notifier" => :run
+  depends_on "terminal-notifier"
 
   def install
     bin.install "mumbrew"
@@ -40,7 +37,7 @@ class Mumbrew < Formula
         <array>
           <dict>
             <key>Hour</key>
-            <integer>19</integer>
+            <integer>22</integer>
             <key>Minute</key>
             <integer>0</integer>
           </dict>
