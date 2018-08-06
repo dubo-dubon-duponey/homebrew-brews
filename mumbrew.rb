@@ -1,7 +1,6 @@
 class Mumbrew < Formula
   desc "Auto updater for homebrew with notifications"
   homepage "https://github.com/dubo-dubon-duponey/mumbrew"
-  url "https://github.com/dubo-dubon-duponey/mumbrew.git"
   head "https://github.com/dubo-dubon-duponey/mumbrew.git"
 
   depends_on "terminal-notifier"
