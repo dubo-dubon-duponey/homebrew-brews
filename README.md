@@ -6,3 +6,9 @@ Mumbrew:
 brew install dubo-dubon-duponey/brews/mumbrew
 brew services start mumbrew
 ```
+
+SH-art:
+
+```
+brew install dubo-dubon-duponey/brews/sh-art
+```
