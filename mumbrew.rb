@@ -1,14 +1,17 @@
 class Mumbrew < Formula
   desc "Auto updater for homebrew with notifications"
   homepage "https://github.com/dubo-dubon-duponey/mumbrew"
+  url "https://github.com/dubo-dubon-duponey/mumbrew.git",
+      :tag => "v0.0.4",
+      :revision => "b5986ca7dc4f095c260b42fd30536ff3c83b123c"
   head "https://github.com/dubo-dubon-duponey/mumbrew.git"
 
+  depends_on "dubo-dubon-duponey/brews/sh_art" => :build
   depends_on "terminal-notifier"
 
   def install
     bin.install "mumbrew"
   end
-
 
   plist_options :manual => "mumbrew"
 
@@ -49,10 +52,10 @@ class Mumbrew < Formula
         </array>
       </dict>
     </plist>
-    EOS
+  EOS
   end
 
   test do
-    #
+    system "dc-lint", "."
   end
 end
