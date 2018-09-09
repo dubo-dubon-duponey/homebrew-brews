@@ -10,5 +10,5 @@ brew services start mumbrew
 SH-art:
 
 ```
-brew install dubo-dubon-duponey/brews/sh-art
+brew install dubo-dubon-duponey/brews/sh_art
 ```
