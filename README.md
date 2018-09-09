@@ -12,3 +12,5 @@ SH-art:
 ```
 brew install dubo-dubon-duponey/brews/sh_art
 ```
+
+Use HEAD at your own risks.
