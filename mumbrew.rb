@@ -56,6 +56,6 @@ class Mumbrew < Formula
   end
 
   test do
-    system "dc-lint", "."
+    system "dc-tooling-lint", "."
   end
 end

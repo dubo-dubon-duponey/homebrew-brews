@@ -6,6 +6,9 @@ class ShArt < Formula
       :revision => "2e2e2a1ff6df12d6c27e19d8cd9e3b2415d8d65f"
   head "https://github.com/dubo-dubon-duponey/sh-art.git"
 
+  depends_on "jq"
+  # depends_on "ffmpeg"
+
   def install
     args = %w[
     ]
@@ -20,7 +23,7 @@ class ShArt < Formula
   end
 
   test do
-    system "./lint"
+    system "dc-tooling-lint", "."
     system "./unit"
     system "./integration"
   end
