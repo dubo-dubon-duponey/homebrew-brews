@@ -16,15 +16,14 @@ class ShArt < Formula
     # args << "--enable-gpl" if build.with? "gpl"
     # args << "--disable-indev=qtkit" if build.without? "qtkit"
 
-    system "./build", *args
+    system "make" "build", *args
 #    bin.install Dir["bin/*"].select { |f| File.executable? f }
     bin.install Dir["bin/*"]
     lib.install Dir["lib/*"]
   end
 
   test do
-    system "dc-tooling-lint", "."
-    system "./unit"
-    system "./integration"
+    system "make", "test-unit"
+    system "make", "test-integration"
   end
 end
