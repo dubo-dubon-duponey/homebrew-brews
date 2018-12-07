@@ -2,8 +2,8 @@ class ShArt < Formula
   desc "ShArt is a load of shcript"
   homepage "https://github.com/dubo-dubon-duponey/sh-art"
   url "https://github.com/dubo-dubon-duponey/sh-art.git",
-      :tag => "v0.0.1",
-      :revision => "2e2e2a1ff6df12d6c27e19d8cd9e3b2415d8d65f"
+      :tag => "v0.3.0",
+      :revision => "2e97c71dbacbe6a928fbf600abd8bb3fec3c0552"
   head "https://github.com/dubo-dubon-duponey/sh-art.git"
 
   depends_on "jq"

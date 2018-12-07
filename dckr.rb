@@ -3,7 +3,7 @@ class Dckr < Formula
   homepage "https://github.com/dubo-dubon-duponey/dckr"
   url "https://github.com/dubo-dubon-duponey/dckr.git",
       :tag => "v0.1.0",
-      :revision => "a2cc96ae6e154a8cbe3cac2f94e70e7984175e08"
+      :revision => "41098ebd5de4c58c2db4794bff5c26a0bf3b9530"
   head "https://github.com/dubo-dubon-duponey/dckr.git"
 
   def install
