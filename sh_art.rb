@@ -7,16 +7,13 @@ class ShArt < Formula
   head "https://github.com/dubo-dubon-duponey/sh-art.git"
 
   depends_on "jq"
-  # depends_on "ffmpeg"
+  # "ffmpeg"
 
   def install
-    args = %w[
-    ]
-
     # args << "--enable-gpl" if build.with? "gpl"
     # args << "--disable-indev=qtkit" if build.without? "qtkit"
 
-    system "make" "build", *args
+    system "make", "build", "-j", "1"
 #    bin.install Dir["bin/*"].select { |f| File.executable? f }
     bin.install Dir["bin/*"]
     lib.install Dir["lib/*"]
