@@ -11,7 +11,7 @@ class Regander < Formula
 
   def install
     # system "make" "build", *args
-    system "make", "build"
+    system "make", "build", "-j", "1"
     bin.install Dir["bin/*"].select { |f| File.executable? f }
     # bin.install Dir["bin/*"]
   end
