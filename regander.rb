@@ -10,7 +10,8 @@ class Regander < Formula
   # depends_on "ffmpeg"
 
   def install
-    system "make" "build", *args
+    # system "make" "build", *args
+    system "make" "build"
     bin.install Dir["bin/*"].select { |f| File.executable? f }
     # bin.install Dir["bin/*"]
   end
