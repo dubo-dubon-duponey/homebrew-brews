@@ -2,11 +2,10 @@ class Mumbrew < Formula
   desc "Auto updater for homebrew with notifications"
   homepage "https://github.com/dubo-dubon-duponey/mumbrew"
   url "https://github.com/dubo-dubon-duponey/mumbrew.git",
-      :tag => "v0.1.0",
-      :revision => "1d10344b8c8da75d69ece72fd3f446c8a1e4a418"
+      :tag => "v1.0.0",
+      :revision => "85ff7fda8b81c0dcbf8cb725b44d8d46653a266b"
   head "https://github.com/dubo-dubon-duponey/mumbrew.git"
 
-  depends_on "dubo-dubon-duponey/brews/sh_art" => :build
   depends_on "terminal-notifier"
 
   def install
@@ -56,6 +55,6 @@ class Mumbrew < Formula
   end
 
   test do
-    system "dc-tooling-lint", "."
+    system "./test.sh"
   end
 end
