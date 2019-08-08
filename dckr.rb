@@ -2,8 +2,8 @@ class Dckr < Formula
   desc "dckr, docker dev helper"
   homepage "https://github.com/dubo-dubon-duponey/dckr"
   url "https://github.com/dubo-dubon-duponey/dckr.git",
-      :tag => "v1.1.0",
-      :revision => "e14603f76a4aca0fc3a489306c6fb616bb27998e"
+      :tag => "v1.2.0",
+      :revision => "bf794913110c3fb8bb91403319da2abf88ab9b2b"
   head "https://github.com/dubo-dubon-duponey/dckr.git", :branch => "master"
 
   def install
