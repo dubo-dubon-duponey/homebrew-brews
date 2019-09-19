@@ -1,5 +1,14 @@
 # Home of my brews
 
+Terraform Gandi Provider:
+
+> Packaged from https://github.com/tiramiseb/terraform-provider-gandi
+
+```
+brew install dubo-dubon-duponey/brews/terraform_provider_gandi
+```
+
+
 Mumbrew:
 
 > Daily auto-updater for brew formulas with notifications.
