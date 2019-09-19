@@ -5,7 +5,7 @@ Terraform Gandi Provider:
 > Packaged from https://github.com/tiramiseb/terraform-provider-gandi
 
 ```
-brew install dubo-dubon-duponey/brews/terraform_provider_gandi
+brew install dubo-dubon-duponey/brews/terraform-provider-gandi
 ```
 
 
@@ -20,7 +20,7 @@ brew services start mumbrew
 
 SH-art:
 
-> Shell-script framework to ease developping fancy pieces of shcripts
+> Shell-script framework to ease developing fancy pieces of shcripts
 
 ```
 brew install dubo-dubon-duponey/brews/sh_art
