@@ -1,7 +1,5 @@
-require "language/go"
-
 class TerraformProviderGandi < Formula
-  desc "Gandi provisioner for Terraform"
+  desc "Gandi provider for Terraform"
   homepage "https://github.com/tiramiseb/terraform-provider-gandi"
   url "https://github.com/tiramiseb/terraform-provider-gandi/archive/v1.1.0.tar.gz"
   sha256 "e657882494a996c1ce530cb4e5b1677109a59381312c0de1eab56cab39be301e"
@@ -16,8 +14,6 @@ class TerraformProviderGandi < Formula
     terrapath = buildpath/"src/github.com/tiramiseb/terraform-provider-gandi"
     terrapath.install Dir["*"]
 
-    Language::Go.stage_deps resources, buildpath/"src"
-
     cd terrapath do
       system "go", "build"
       bin.install "terraform-provider-gandi"
@@ -27,7 +23,7 @@ class TerraformProviderGandi < Formula
 
   def caveats
     <<~EOS
-      Once installed a $HOME/.terraformrc file is used to enable the plugin:
+      To enable this plugin, create or modify $HOME/.terraformrc with:
 
       providers {
         gandi = "#{HOMEBREW_PREFIX}/bin/terraform-provider-gandi"
