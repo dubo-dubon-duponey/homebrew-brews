@@ -1,8 +1,8 @@
 class TerraformProviderGandi < Formula
   desc "Gandi provider for Terraform"
   homepage "https://github.com/tiramiseb/terraform-provider-gandi"
-  url "https://github.com/tiramiseb/terraform-provider-gandi/archive/v1.1.0.tar.gz"
-  sha256 "e657882494a996c1ce530cb4e5b1677109a59381312c0de1eab56cab39be301e"
+  url "https://github.com/tiramiseb/terraform-provider-gandi/archive/v1.1.1.tar.gz"
+  sha256 "b9bc76980250504820b4c66bc31d461c7bd1fad48acbbeab5aa33bf788c8816f"
   head "https://github.com/tiramiseb/terraform-provider-gandi.git"
 
   depends_on "go" => :build
