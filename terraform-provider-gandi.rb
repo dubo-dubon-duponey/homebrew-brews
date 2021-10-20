@@ -11,6 +11,8 @@ class TerraformProviderGandi < Formula
   def install
     ENV["GOPATH"] = buildpath
 
+    ENV["CGO_ENABLED"] = "1"
+
     terrapath = buildpath/"src/github.com/tiramiseb/terraform-provider-gandi"
     terrapath.install Dir["*"]
 
