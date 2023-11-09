@@ -12,9 +12,7 @@ class Mumbrew < Formula
     bin.install "mumbrew"
   end
 
-  # plist_options :manual => "mumbrew"
-
-  def plist; <<~EOS
+  def PLOP_plist; <<~EOS
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
@@ -54,7 +52,19 @@ class Mumbrew < Formula
   EOS
   end
 
-  service.require_root :manual => "mumbrew"
+  #service.require_root :manual => "mumbrew"
+
+
+  service do
+    run ["/bin/bash", opt_bin/"mumbrew"]
+    run_type :interval
+    interval 86400
+    working_dir HOMEBREW_PREFIX
+
+    log_path var/"log/mumbrew.err.log"
+    error_log_path var/"log/mumbrew.out.log"
+  end
+
 
   test do
     system "./test.sh"
