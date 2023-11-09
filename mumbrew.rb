@@ -12,7 +12,6 @@ class Mumbrew < Formula
     bin.install "mumbrew"
   end
 
-  service.require_root :manual => "mumbrew"
   # plist_options :manual => "mumbrew"
 
   def plist; <<~EOS
@@ -54,6 +53,8 @@ class Mumbrew < Formula
     </plist>
   EOS
   end
+
+  service.require_root :manual => "mumbrew"
 
   test do
     system "./test.sh"
