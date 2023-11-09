@@ -12,7 +12,8 @@ class Mumbrew < Formula
     bin.install "mumbrew"
   end
 
-  plist_options :manual => "mumbrew"
+  service.require_root :manual => "mumbrew"
+  # plist_options :manual => "mumbrew"
 
   def plist; <<~EOS
     <?xml version="1.0" encoding="UTF-8"?>
